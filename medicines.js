@@ -154,133 +154,7 @@ const defaultPoultryMedicines = [
     {
         id: "cb3",
         birdType: "color_bird",
-        name: "রাণীক্ষেত এবং ব্রঙ্কাইটিস ভ্যাকসিন",
-        days: "৭ দিন",
-        time: "সকাল",
-        purpose: "রাণীক্ষেত রোগ সংক্রমণ রোধে",
-        dosage: "১ চোখ করে বাচ্চার চোখে ড্রপ দিতে হবে।",
-        category: "vaccine",
-        icon: "💉"
-    },
-    {
-        id: "cb4",
-        birdType: "color_bird",
-        name: "ক্যালকুর ও জিংক প্লাস",
-        days: "১০-১২ দিন",
-        time: "দুপুর",
-        purpose: "ল্যাংড়া রোগ এবং পালকের অপুষ্টি রোধে",
-        dosage: "১ মিলি ক্যালসিয়াম ও ১ মিলি জিঙ্ক তরল লিটার পানিতে।",
-        category: "calcium",
-        icon: "🦴"
-    },
-    {
-        id: "cb5",
-        birdType: "color_bird",
-        name: "গামবোরো ভ্যাক্সিন ডোজ",
-        days: "১৪ দিন",
-        time: "সকাল",
-        purpose: "গামবোরো মড়ক দূরীকরণে",
-        dosage: "চোখের ড্রপ হিসেবে অথবা ঠান্ডা পানিতে বিতরণ করে।",
-        category: "vaccine",
-        icon: "💉"
-    },
-    {
-        id: "cb6",
-        birdType: "color_bird",
-        name: "লিভার প্রো এবং হজমি শক্তি কারক",
-        days: "১৭-১৯ দিন",
-        time: "দুপুর ও রাত",
-        purpose: "হজম ক্ষমতা ও এফসিআর বাড়াতে",
-        dosage: "১ মিলি প্রতি লিটার পরিষ্কার পানিতে মিশিয়ে খাওয়ান।",
-        category: "tonic",
-        icon: "🌿"
-    },
-    {
-        id: "cb7",
-        birdType: "color_bird",
-        name: "রাণীক্ষেত লাসোটা বুস্টার",
-        days: "২৫ দিন",
-        time: "সকাল",
-        purpose: "রাণীক্ষেত রোগের দীর্ঘ জীবন ধারণ ক্ষমতা সৃষ্টিতে",
-        dosage: "ঠান্ডা ভ্যাক্সিন গুলানো পানিতে (২ ঘণ্টা)।",
-        category: "vaccine",
-        icon: "💉"
-    },
-
-    // === সোনালি (Sonali) ===
-    {
-        id: "s1",
-        birdType: "sonali",
-        name: "গ্লুকোজ ও ভিটামিন সি ধকল মুক্তি",
-        days: "১-৩ দিন",
-        time: "১২ ঘণ্টা একটানা",
-        purpose: "বাচ্চার ক্লান্তি দূর করা ও শরীরের তাপমাত্রা সাম্যাবস্থায় আনা",
-        dosage: "১ গ্রাম ভিটামিন সি ও ২ গ্রাম গ্লুকোজ প্রতি লিটার পানিতে।",
-        category: "electrolyte",
-        icon: "💧"
-    },
-    {
-        id: "s2",
-        birdType: "sonali",
-        name: "এডি৩ই ও বি-কমপ্লেক্স ভিটামিন",
-        days: "৪-৬ দিন",
-        time: "সকাল ও রাত",
-        purpose: "হাড় মজবুত ও মাংস বৃদ্ধির বুনিয়াদ গড়তে",
-        dosage: "ভিটামিন এডি৩ই ১ মিলি প্রতি ৩ লিটার পানি।",
-        category: "vitamin",
-        icon: "🧪"
-    },
-    {
-        id: "s3",
-        birdType: "sonali",
-        name: "প্রথম রাণীক্ষেত ভ্যাকসিন (BCRDV)",
-        days: "৭ দিন",
-        time: "সকাল",
-        purpose: "রাণীক্ষেত রোগের ভাইরাস দমন",
-        dosage: "বাচ্চার এক চোখে ১ ফোঁটা সরাসরি।",
-        category: "vaccine",
-        icon: "💉"
-    },
-    {
-        id: "s4",
-        birdType: "sonali",
-        name: "প্রথম গামবোরো ভ্যাকসিন (IBD)",
-        days: "১২ দিন",
-        time: "সকাল",
-        purpose: "গামবোরো রোগের ক্ষতিকর আক্রমণ রুখতে",
-        dosage: "চোখে এক ফোঁটা ড্রপ দিতে হবে।",
-        category: "vaccine",
-        icon: "💉"
-    },
-    {
-        id: "s5",
-        birdType: "sonali",
-        name: "ক্যালসিয়াম ও টক্সিন বাইন্ডার",
-        days: "১৫-১৮ দিন",
-        time: "দুপুর ও রাত",
-        purpose: "পায়ের দুর্বলতা দূর করা ও লিভার ভালো রাখতে",
-        dosage: "১ মিলি ক্যালডিকল প্রতি লিটার প্লাস ১ মিলি টক্সিন বাইন্ডার।",
-        category: "calcium",
-        icon: "🦴"
-    },
-    {
-        id: "s6",
-        birdType: "sonali",
-        name: "গামবোরো বুস্টার ভ্যাক্সিন",
-        days: "২০ দিন",
-        time: "সকাল",
-        purpose: "গামবোরো ভাইরাসের বিরুদ্ধে ডাবল প্রটেকশন",
-        dosage: "ঠান্ডা পরিষ্কার ডিস্ট্রিল ওয়াটারে বা টিউবওয়েলের পানিতে মিশিয়ে।",
-        category: "vaccine",
-        icon: "💉"
-    },
-    {
-        id: "s7",
-        birdType: "sonali",
-        name: "রাণীক্ষেত লাসোটা বুস্টার (LaSota)",
-        days: "২৫ দিন",
-        time: "সকাল (সূর্য ওঠার আগে)",
-        purpose: "রাণীক্ষেত রোগের বুস্টার প্রটেকশন",
+        name: "রাণীক্ষেত এবং ব্রঙ্কাইটিস �        purpose: "রাণীক্ষেত রোগের বুস্টার প্রটেকশন",
         dosage: "পানিতে মিশিয়ে বিতরণ করতে হবে।",
         category: "vaccine",
         icon: "💉"
@@ -366,7 +240,143 @@ const defaultPoultryMedicines = [
     }
 ];
 
-// 🎨 উইজার্ড ফিল্টারিং ফাংশন
+// 🎨 উইজার্ড ফিল্টারিং ফাংশন   <div class="flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-yellow-600 dark:text-yellow-400 text-lg flex-shrink-0 mt-0.5">healing</span>
+                        <div>
+                            <span class="font-bold text-gray-500 dark:text-gray-400 text-xs block">মূল কার্যকারিতা</span>
+                            <span class="text-gray-700 dark:text-gray-300 font-medium">${med.purpose}</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-blue-600 dark:text-blue-400 text-lg flex-shrink-0 mt-0.5">science</span>
+                        <div>
+                            <span class="font-bold text-gray-500 dark:text-gray-400 text-xs block">ব্যবহার ও মাত্রা</span>
+                            <span class="text-gray-700 dark:text-gray-300 font-medium">${med.dosage}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+// ফায়ারবেস থেকে ওষুধগুলোর ডেটা রিয়েল-টাইম লোড ও সিঙ্ক করন
+function initializeFirebaseMedicines(uid) {
+    const activeUid = uid || (typeof currentUser !== 'undefined' && currentUser ? currentUser.uid : null);
+    if (activeUid && typeof db !== 'undefined' && db) {
+        db.ref(`users/${activeUid}/medicines`).on('value', s => {
+            const data = s.val();
+            if (data) {
+                let list = [];
+                if (Array.isArray(data)) {
+                    list = data.filter(item => item !== null);
+                } else {
+                    list = Object.values(data);
+                }
+                poultryMedicines = list;
+                renderFilteredMedicines();
+            } else {
+                // ফায়ারবেস ফাকা থাকলে প্রথমবার ডিফল্ট লিস্ট দিয়ে সেভ করা হবে (অটো-সীডিং)
+                db.ref(`users/${activeUid}/medicines`).set(defaultPoultryMedicines)
+                    .then(() => {
+                        console.log("Firebase medicines list successfully seeded! ✅");
+                    })
+                    .catch(err => {
+                        console.error("Failed to seed Firebase medicines:", err);
+                    });
+                poultryMedicines = [...defaultPoultryMedicines];
+                renderFilteredMedicines();
+            }
+        }, err => {
+            console.error("Failed to load medicines from Firebase, using offline defaults:", err);
+            poultryMedicines = [...defaultPoultryMedicines];
+            renderFilteredMedicines();
+        });
+    } else {
+        // যদি ফায়ারবেস অবজেক্ট ডিটেক্ট না করা যায় বা লগইন না থাকে
+        poultryMedicines = [...defaultPoultryMedicines];
+        renderFilteredMedicines();
+    }
+}
+
+// নতুন ওষুধের ফর্ম প্রস্তুতকরণ
+function prepareMedicineForm() {
+    document.getElementById('medicine-id').value = '';
+    document.getElementById('medicine-name-input').value = '';
+    document.getElementById('medicine-days').value = '';
+    document.getElementById('medicine-time').value = '';
+    document.getElementById('medicine-purpose').value = '';
+    document.getElementById('medicine-dosage').value = '';
+    document.getElementById('medicine-bird-type').value = currentBirdType;
+    document.getElementById('medicine-category').value = 'electrolyte';
+    document.getElementById('medicine-icon').value = '💧';
+    
+    document.getElementById('medicine-form-title').innerText = "নতুন ওষুধ যোগ করুন";
+    navigate('add-medicine-page');
+}
+
+// ওষুধের তথ্য পরিবর্তন/সম্পাদনা
+function editMedicine(medId) {
+    const med = poultryMedicines.find(m => m.id === medId);
+    if (!med) return;
+    
+    document.getElementById('medicine-id').value = med.id;
+    document.getElementById('medicine-bird-type').value = med.birdType;
+    document.getElementById('medicine-name-input').value = med.name;
+    document.getElementById('medicine-days').value = med.days;
+    document.getElementById('medicine-category').value = med.category || 'electrolyte';
+    document.getElementById('medicine-time').value = med.time;
+    document.getElementById('medicine-purpose').value = med.purpose;
+    document.getElementById('medicine-dosage').value = med.dosage;
+    document.getElementById('medicine-icon').value = med.icon || '💧';
+    
+    document.getElementById('medicine-form-title').innerText = "ওষুধ পরিবর্তন করুন";
+    navigate('add-medicine-page');
+}
+
+// ওষুধ ফায়ারবেসে সংরক্ষন/আপডেট করা
+function saveMedicine(e) {
+    e.preventDefault();
+    if (!currentUser) return alert("লগইন নেই");
+    
+    const medId = document.getElementById('medicine-id').value;
+    const key = medId || db.ref(`users/${currentUser.uid}/medicines`).push().key;
+    const d = {
+        id: key,
+        birdType: document.getElementById('medicine-bird-type').value,
+        name: document.getElementById('medicine-name-input').value,
+        days: document.getElementById('medicine-days').value,
+        category: document.getElementById('medicine-category').value,
+        time: document.getElementById('medicine-time').value,
+        purpose: document.getElementById('medicine-purpose').value,
+        dosage: document.getElementById('medicine-dosage').value,
+        icon: document.getElementById('medicine-icon').value
+    };
+    
+    if (!navigator.onLine) showToast("এড হয়েছে, আপডেট হতে নেটওয়ার্ক প্রয়োজন ⚠️");
+    
+    db.ref(`users/${currentUser.uid}/medicines/${key}`).set(d).then(() => {
+        if (navigator.onLine) showToast("ওষুধ সফলভাবে সেভ হয়েছে ✅");
+        goBack();
+    }).catch(err => {
+        showToast("ত্রুটি ঘটেছে ❌");
+        console.error(err);
+    });
+}
+
+// ওষুধ মুছে ফেলা
+function deleteMedicine(medId) {
+    if (!currentUser) return alert("লগইন নেই");
+    if (confirm("এই ওষুধটি কি তালিকা থেকে মুছে ফেলবেন?")) {
+        db.ref(`users/${currentUser.uid}/medicines/${medId}`).remove().then(() => {
+            showToast("ওষুধ মুছে ফেলা হয়েছে ✅");
+        }).catch(err => {
+            showToast("মুছে ফেলা সম্ভব হয়নি ❌");
+            console.error(err);
+        });
+    }
+} ফাংশন
 function setBirdFilter(typeBengali) {
     // বাংলা থেকে ইংরেজি কনভার্ট (যদি প্রয়োজন হয়)
     let typeMap = {
