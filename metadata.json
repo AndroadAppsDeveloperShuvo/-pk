@@ -1,0 +1,6 @@
+{
+  "name": "Amar Khamar - Smart Manager",
+  "description": "পোল্ট্রি খামার হিসাব-নিকাশ এবং স্মার্ট ম্যানেজমেন্ট অ্যাপ্লিকেশন",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
