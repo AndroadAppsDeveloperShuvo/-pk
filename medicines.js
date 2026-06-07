@@ -2,8 +2,9 @@
 // 💊 ওষুধের তালিকা ও গতিশীল ভ্যাকসিন শিডিউল সিস্টেম
 
 let currentBirdType = 'broiler';
+let poultryMedicines = [];
 
-const poultryMedicines = [
+const defaultPoultryMedicines = [
     // === بروائلার (Broiler) ===
     {
         id: "b1",
@@ -480,12 +481,48 @@ function renderFilteredMedicines() {
     }).join('');
 }
 
-// 🚀 প্রথমবার লোডে ব্রয়লার দিয়ে শুরু
+// ফায়ারবেস থেকে ওষুধগুলোর ডেটা রিয়েল-টাইম লোড ও সিঙ্ক করন
+function initializeFirebaseMedicines() {
+    if (typeof db !== 'undefined' && db) {
+        db.ref('medicines').on('value', s => {
+            const data = s.val();
+            if (data) {
+                if (Array.isArray(data)) {
+                    poultryMedicines = data.filter(item => item !== null);
+                } else {
+                    poultryMedicines = Object.values(data);
+                }
+                renderFilteredMedicines();
+            } else {
+                // ফায়ারবেস ফাকা থাকলে প্রথমবার ডিফল্ট লিস্ট দিয়ে সেভ করা হবে (অটো-সীডিং)
+                db.ref('medicines').set(defaultPoultryMedicines)
+                    .then(() => {
+                        console.log("Firebase medicines list successfully seeded! ✅");
+                    })
+                    .catch(err => {
+                        console.error("Failed to seed Firebase medicines:", err);
+                    });
+                poultryMedicines = [...defaultPoultryMedicines];
+                renderFilteredMedicines();
+            }
+        }, err => {
+            console.error("Failed to load medicines from Firebase, using offline defaults:", err);
+            poultryMedicines = [...defaultPoultryMedicines];
+            renderFilteredMedicines();
+        });
+    } else {
+        // যদি ফায়ারবেস অবজেক্ট ডিটেক্ট না করা যায়
+        poultryMedicines = [...defaultPoultryMedicines];
+        renderFilteredMedicines();
+    }
+}
+
+// 🚀 প্রথমবার লোডে ব্রয়লার দিয়ে শুরু ও ফায়ারবেস ইন্টিগ্রেটেড মেডিসিন লোডার
 document.addEventListener('DOMContentLoaded', () => {
-    setBirdFilter('ব্রয়লার');
+    initializeFirebaseMedicines();
 });
 
 // সরাসরি স্ক্রিপ্ট রান হবার সাথে সাথেও ফিল্টার যাতে রেন্ডার হয় ক্যাশ হীনতার জন্য
 setTimeout(() => {
-    setBirdFilter('ব্রয়লার');
+    initializeFirebaseMedicines();
 }, 300);
